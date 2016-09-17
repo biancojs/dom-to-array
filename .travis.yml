@@ -11,7 +11,8 @@ before_install:
   - npm i eslint@3.0.1
   - npm i @gianlucaguarini/eslint-config@1.0.0
   - npm i mocha@3.0.2
-  - npm i
+
+before_script:
   - npm run build
 
 notifications:
