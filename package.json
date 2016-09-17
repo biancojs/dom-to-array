@@ -35,8 +35,7 @@
   "homepage": "https://github.com/biancojs/dom-to-array#readme",
   "devDependencies": {
     "jsdom": "9.5.0",
-    "jsdom-global": "2.1.0",
-    "rollup-plugin-node-resolve": "^2.0.0"
+    "jsdom-global": "2.1.0"
   },
   "dependencies": {
     "bianco.is-iterable": "^0.0.1"
