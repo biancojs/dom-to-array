@@ -1,5 +1,3 @@
-import isIterable from 'bianco.is-iterable'
-
 /**
  * Converts any DOM node/s into a loopable array like object
  * @param   { HTMLElement|NodeList } els - single html element or a node list
@@ -7,7 +5,7 @@ import isIterable from 'bianco.is-iterable'
  */
 export default function domToArray(els) {
   // can this object be already looped?
-  if (!isIterable(els)) {
+  if (!Array.isArray(els)) {
     // is it a node list?
     if (els.length)
       return Array.from(els)
@@ -15,7 +13,7 @@ export default function domToArray(els) {
       // if it's a single node
       // it will be returned as "array" with one single entry
       return [els]
-  } else
-    // this object could be looped out of the box
-    return els
+  }  
+  // this object could be looped out of the box
+  return els
 }
