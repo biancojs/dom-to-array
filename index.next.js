@@ -14,7 +14,7 @@ export default function domToArray(els) {
     else
       // if it's a single node
       // it will be returned as "array" with one single entry
-      return Array.from({ length: 1 }, _ => els)
+      return [els]
   } else
     // this object could be looped out of the box
     return els
