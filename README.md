@@ -26,19 +26,19 @@ body.appendChild(div)
 const lis = document.querySelectorAll('li')
 const $lis = domToArray(lis)
 $lis.length // => 2
-typeof $lis // => 'object'
+Array.isArray($lis) // => true
 
 // It can convert a single node
 const li = document.querySelector('li')
 const $li = domToArray(li)
 $li.length // => 1
-typeof $li // => 'object'
+Array.isArray($li) // => true
 
 ```
 
 ## API
 
-- `domToArray` Converts any DOM node/s into a loopable array like object
+- `domToArray` Converts any DOM node/s to a loopable array
 
 
 [travis-image]:https://img.shields.io/travis/biancojs/dom-to-array.svg?style=flat-square

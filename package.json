@@ -1,7 +1,7 @@
 {
   "name": "bianco.dom-to-array",
   "version": "0.0.2",
-  "description": "Covert DOM node/s into an array like object",
+  "description": "Converts any DOM node/s to a loopable array",
   "main": "index.js",
   "jsnext:main": "index.next.js",
   "scripts": {

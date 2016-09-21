@@ -1,5 +1,5 @@
 /**
- * Converts any DOM node/s into a loopable array like object
+ * Converts any DOM node/s to a loopable array
  * @param   { HTMLElement|NodeList } els - single html element or a node list
  * @returns { Object } always a loopable object
  */
