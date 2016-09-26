@@ -1,7 +1,7 @@
 /**
  * Converts any DOM node/s to a loopable array
  * @param   { HTMLElement|NodeList } els - single html element or a node list
- * @returns { Object } always a loopable object
+ * @returns { Array } always a loopable object
  */
 export default function domToArray(els) {
   // can this object be already looped?
