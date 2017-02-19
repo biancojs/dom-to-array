@@ -4,7 +4,7 @@ const domToArray = require('./')
 const body = document.body
 
 describe('Bianco dom-to-array', function() {
-  beforeEach(function () {
+  before(function () {
     var div = document.createElement('div')
     div.innerHTML = `
       <ul>
@@ -28,4 +28,11 @@ describe('Bianco dom-to-array', function() {
     assert.equal($li.length, 1)
     assert.equal(typeof $li, 'object')
   })
+
+  it('It can detect also the window', function() {
+    const $win = domToArray(window)
+    assert.equal($win.length, 1)
+    assert.equal(typeof $win, 'object')
+  })
+
 })
