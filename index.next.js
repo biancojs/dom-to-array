@@ -7,7 +7,8 @@ export default function domToArray(els) {
   // can this object be already looped?
   if (!Array.isArray(els)) {
     // is it a node list?
-    if (els.length)
+    // watch out window.length exists and must be filtered
+    if (els !== window && els.length)
       return Array.from(els)
     else
       // if it's a single node
