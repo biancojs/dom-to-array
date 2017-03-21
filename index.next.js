@@ -7,8 +7,11 @@ export default function domToArray(els) {
   // can this object be already looped?
   if (!Array.isArray(els)) {
     // is it a node list?
-    // watch out window.length exists and must be filtered
-    if (els !== window && els.length)
+    if (
+        /^\[object (HTMLCollection|NodeList|Object)\]$/
+          .test(Object.prototype.toString.call(els))
+        && typeof els.length === 'number'
+      )
       return Array.from(els)
     else
       // if it's a single node
