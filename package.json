@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/biancojs/dom-to-array#readme",
   "devDependencies": {
-    "jsdom": "9.11.0",
-    "jsdom-global": "2.1.1"
+    "jsdom": "11.7.0",
+    "jsdom-global": "3.0.2"
   }
 }
