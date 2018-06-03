@@ -8,10 +8,10 @@ export default function domToArray(els) {
   if (!Array.isArray(els)) {
     // is it a node list?
     if (
-        /^\[object (HTMLCollection|NodeList|Object)\]$/
-          .test(Object.prototype.toString.call(els))
+      /^\[object (HTMLCollection|NodeList|Object)\]$/
+        .test(Object.prototype.toString.call(els))
         && typeof els.length === 'number'
-      )
+    )
       return Array.from(els)
     else
       // if it's a single node

@@ -4,8 +4,8 @@ const domToArray = require('./')
 const body = document.body
 
 describe('Bianco dom-to-array', function() {
-  before(function () {
-    var div = document.createElement('div')
+  before(function() {
+    const div = document.createElement('div')
     div.innerHTML = `
       <ul>
         <li>one</li>
