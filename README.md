@@ -32,7 +32,7 @@ $li.length // => 1
 Array.isArray($li) // => true
 ```
 
-[ci-image]:https://img.shields.io/github/workflow/status/biancojs/dom-to-array/test?style=flat-square
+[ci-image]:https://img.shields.io/github/actions/workflow/status/biancojs/dom-to-array/test.yml?style=flat-square
 [ci-url]:https://github.com/biancojs/dom-to-array/actions
 
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
